@@ -1,1 +1,8 @@
+<link rel="stylesheet" type="text/css" href="/index.css">
+
 <h1><%= friends.toUpperCase()%> are my friends.</h1>
+<% if(friends==="ferrets"){ %>
+    <li>Ferrets are my favourite x3</li>
+<% }else{ %>
+<p> <%= friends.toUpperCase()%> are cute as well!</p>
+<% } %>
