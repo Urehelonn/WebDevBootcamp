@@ -1,0 +1,9 @@
+<h1>Home Page</h1>
+
+<% fuzz.forEach(function(fuz){ %>
+    <li> <%=fuz %> </li>
+<% }); %>
+<form action="/addFuzz" method="POST">
+    <input type="text" name="name" placeholder="new fuzz">
+    <button>New Fuzz</button>
+</form>
