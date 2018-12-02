@@ -6,12 +6,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.set("view engine", "ejs");
 
-var fuzz=[
-   "qwe",
-   "ert",
-   "poi",
-   "oij"
-   ];
+var fuzz=["qwe","ert","poi","oij"];
        
        
 app.get("/", function(req, res){

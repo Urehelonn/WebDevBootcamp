@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="/index.css">
+<% include partials/header%>
 
 <h1><%= friends.toUpperCase()%> are my friends.</h1>
 <% if(friends==="ferrets"){ %>
@@ -6,3 +6,5 @@
 <% }else{ %>
 <p> <%= friends.toUpperCase()%> are cute as well!</p>
 <% } %>
+
+<% include partials/footer%>
