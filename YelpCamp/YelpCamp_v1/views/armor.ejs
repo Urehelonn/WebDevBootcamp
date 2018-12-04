@@ -1,7 +1,40 @@
-<h1>Armor</h1>
-<% armor.forEach(function(arm){ %>
-    <div>
-        <h4><%= arm.name %></h4>
-        <img src="<%=arm.img%>" href="">
+<% include partials/header %>
+
+<header class="jumbotron"><div class="container">
+    <h2>The Great Vaal Hazak!</h2>
+    <p>View picture of the best looking dragon in Monster Hunter World!</p></div>
+</header>
+
+<div class="container">
+<h2>Armors</h2>
+<div class="row text-center" style="display:flex; flex-wrap:wrap;">
+    <% armor.forEach(function(arm){ %>
+        <div class="col-lg-4 col-md-6 col sm-5">
+            <div class="img-thumbnail">
+                <img src="<%=arm.img%>" href="">
+                <div class="caption">
+                    <h4><%= arm.name %></h4>
+                </div>
+            </div>
+        </div>
+    <% }); %>
+</div>
+<br>
+
+<hr style="background-color: #fff;
+	border-top: 2px dashed #8c8b8b;">
+<div class="container">
+    <h2>Funny Picture About Vaal Hazak!</h2>
+    <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+        <% funPic.forEach(function(pic){ %>
+            <div class="img-thumbnail">
+            <img src="<%=pic%>" href="">
+            </div>
+        <% }); %>
     </div>
-<% }); %>
+</div>
+<li><a class="btn btn-primary btn-large" href="/vaal_hazak_armor/new">New Funny Picture</a></li>
+
+</div>
+ 
+<% include partials/footer %>
